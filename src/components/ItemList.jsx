@@ -4,8 +4,8 @@ import style from "./ItemList.module.css"
 const ItemList = ({ gifts }) => {
   return (
     <ul className={style["list-gifts"]}>
-      {gifts.map((gift, index) => (
-        <Item key={index} text={gift} />
+      {gifts.map((gift) => (
+        <Item key={gift.id} text={gift.text} />
       ))}
     </ul>
   )
