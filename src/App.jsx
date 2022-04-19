@@ -18,7 +18,7 @@ const App = () => {
     const giftInputValue = inputGiftRef.current?.value
 
     if (giftInputValue) {
-      const randomId = Math.floor(Math.random() * 500 + 1)
+      const randomId = Math.floor(Math.random() * 500 + 1) // TODO: use library to generate id
 
       setGifts((prevGifts) => {
         return [{ text: giftInputValue, id: randomId }, ...prevGifts]
@@ -28,6 +28,16 @@ const App = () => {
         inputGiftRef.current.value = ""
       }
     }
+  }
+
+  const handleClearList = () => {
+    setGifts([])
+  }
+
+  const deleteGift = (id) => {
+    setGifts((prevGifts) => {
+      return prevGifts.filter((gift) => gift.id !== id)
+    })
   }
 
   console.log({ gifts })
@@ -43,8 +53,9 @@ const App = () => {
             autoFocus
           />
           <button type="submit">Add</button>
+          <button onClick={handleClearList}>Clear List</button>
         </form>
-        <ItemList gifts={gifts} />
+        <ItemList gifts={gifts} deleteGift={deleteGift} />
       </div>
     </div>
   )

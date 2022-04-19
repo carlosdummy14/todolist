@@ -6,7 +6,7 @@
 - [x] Show last item on the top of list
 - [x] Add local storage use
 - [x] Refactor of gifts array to use text and id -- aca random number
-- [] Clear list
-- [] Delete item
+- [x] Clear list
+- [x] Delete item
 - [] Edit item
 - []
