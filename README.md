@@ -1,6 +1,6 @@
 # Simple gift list
 
-![Gift List](/screen-giftlist.jpg)
+![Gift List](./screen-giftlist.jpg)
 
 #### Steps
 
