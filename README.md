@@ -1,4 +1,4 @@
-### Simple todolist
+### Simple gift list
 
 - [x] Show a list of items
 - [x] Add input and button
@@ -10,4 +10,4 @@
 - [x] Delete item
 - [x] Edit item
 
-- [] Css
+- [] CSS

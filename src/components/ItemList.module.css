@@ -9,6 +9,3 @@
   row-gap: 0.5rem;
   overflow-y: scroll;
 }
-
-.list-gifts::-webkit-scrollbar {
-}
