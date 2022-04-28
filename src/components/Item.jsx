@@ -1,10 +1,13 @@
 import style from "./Item.module.css"
 
-const Item = ({ text, id, deleteGift }) => {
+const Item = ({ text, id, deleteGift, editGift }) => {
   return (
     <li className={style["list-item"]}>
-      [{id}] : {text}
-      <button onClick={() => deleteGift(id)}>Borrar</button>
+      <div className={style.text}>🎁 {text}</div>
+      <div>
+        <button onClick={() => editGift(id)}>✏️ Edit</button>
+        <button onClick={() => deleteGift(id)}>❌ Delete</button>
+      </div>
     </li>
   )
 }

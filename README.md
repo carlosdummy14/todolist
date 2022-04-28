@@ -8,5 +8,6 @@
 - [x] Refactor of gifts array to use text and id -- aca random number
 - [x] Clear list
 - [x] Delete item
-- [] Edit item
-- []
+- [x] Edit item
+
+- [] Css
